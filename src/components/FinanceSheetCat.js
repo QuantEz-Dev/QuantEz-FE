@@ -1,4 +1,4 @@
-import "./FinanceSheetCat.css";
+import "../styles/FinanceSheetCat.css";
 import searchIcon1 from "../img1/search-icon-01.png";
 import searchIcon2 from "../img1/search-icon-02.png";
 import searchIcon3 from "../img1/search-icon-03.png";

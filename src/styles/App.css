@@ -232,7 +232,7 @@ option {
 }
 .main-banner-1-img {
   height: 400px;
-  background: url("./img/main_banner_1.svg") right bottom no-repeat;
+  background: url("../img/main_banner_1.svg") right bottom no-repeat;
   width: 100%;
   display: inline-block;
   padding-right: 50px;
@@ -310,7 +310,7 @@ option {
 }
 .main-banner-2-img {
   height: 400px;
-  background: url("./img/main_banner_2.svg") left bottom no-repeat;
+  background: url("../img/main_banner_2.svg") left bottom no-repeat;
   width: 100%;
   display: inline-block;
   padding-left: 50px;
@@ -379,7 +379,7 @@ a:hover {
   width: 100%;
   position: flex;
   margin: 0 auto;
-  background: #5400cf url(./img/footer.svg) no-repeat center bottom;
+  background: #5400cf url(../img/footer.svg) no-repeat center bottom;
   background-size: cover;
   font-family: "Noto Sans KR", "Nanum Gothic", "나눔고딕", "Noto Sans KR",
     sans-serif;

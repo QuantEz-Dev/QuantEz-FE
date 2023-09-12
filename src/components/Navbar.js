@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { ReactComponent as Mainlogo } from "../img/Mainlogo.svg";
-import "./Navbar.css";
+import "../styles/Navbar.css";
 export const Navbar = () => {
   const [view, setView] = useState(false);
   const handleHover = () => {
