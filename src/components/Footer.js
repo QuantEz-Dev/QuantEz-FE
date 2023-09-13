@@ -1,8 +1,11 @@
-import facebook from "../img/footer-btn-1.png";
-import blog from "../img/footer-btn-2.png";
-import cafe from "../img/footer-btn-3.png";
-import kakaotalk from "../img/footer-btn-4.png";
-import youtube from "../img/footer-btn-5.png";
+// import facebook from "../img/footer-btn-1.png";
+// import blog from "../img/footer-btn-2.png";
+// import cafe from "../img/footer-btn-3.png";
+// import kakaotalk from "../img/footer-btn-4.png";
+// import youtube from "../img/footer-btn-5.png";
+import { BsFacebook } from "react-icons/bs";
+import { RiKakaoTalkFill } from "react-icons/ri";
+import { AiFillYoutube } from "react-icons/ai";
 
 export const Footer = () => {
   return (
@@ -21,27 +24,21 @@ export const Footer = () => {
                 href="mailto:ljh990722@g.hongik.ac.kr"
                 class="footer-link-email"
               >
-                ljh990722@g.hongik.ac.kr
+                문의 : ljh990722@g.hongik.ac.kr
               </a>
             </li>
             <li class="footer-socialLink">
               <a href="http://facebook.com/NewsyStock" target="_blank">
-                <img src={facebook} alt="페이스북" />
+                <BsFacebook color="#1877f2" fontSize="1.5em" />
               </a>
-              <a href="https://blog.naver.com/newsystock" target="_blank">
-                <img src={blog} alt="블로그" />
+              <a>
+                <RiKakaoTalkFill color="#ffe812" fontSize="1.5em" />
               </a>
-              <a href="https://cafe.naver.com/newsystock" target="_blank">
-                <img src={cafe} alt="카페" />
-              </a>
-              <span class="kakaotalk" data-pop="#">
-                <img src={kakaotalk} alt="카카오톡" />
-              </span>
               <a
                 href="https://www.youtube.com/channel/UCil6SlGvpvs7H1t5txMPdFw"
                 target="_blank"
               >
-                <img src={youtube} alt="유튜브" />
+                <AiFillYoutube color="#ff0000" fontSize="1.5em" />
               </a>
             </li>
           </ul>

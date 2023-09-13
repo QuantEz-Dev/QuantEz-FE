@@ -427,7 +427,8 @@ a:hover {
 .footer-socialLink a,
 .footer-socialLink span {
   display: inline-block;
-  padding: 0px 27px 5px 0px;
+
+  margin-right: 5px;
   cursor: pointer;
 }
 .footer-right {
