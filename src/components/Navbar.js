@@ -1,13 +1,7 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import { ReactComponent as Mainlogo } from "../img/Mainlogo.svg";
 import "../styles/Navbar.css";
 export const Navbar = () => {
-  const [view, setView] = useState(false);
-  const handleHover = () => {
-    setView((prevView) => (prevView = !prevView));
-  };
-
   return (
     <div id="header">
       <div id="header-top">
@@ -18,12 +12,6 @@ export const Navbar = () => {
                 로그인
               </Link>
               <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
-            </li>
-            <li>
-              <Link class="join" to="/login">
-                회원가입
-              </Link>
-              <span CL>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
             </li>
             <li>
               <span class="login" onclick="">
