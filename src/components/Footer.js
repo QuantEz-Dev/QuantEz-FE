@@ -1,8 +1,3 @@
-// import facebook from "../img/footer-btn-1.png";
-// import blog from "../img/footer-btn-2.png";
-// import cafe from "../img/footer-btn-3.png";
-// import kakaotalk from "../img/footer-btn-4.png";
-// import youtube from "../img/footer-btn-5.png";
 import { BsFacebook } from "react-icons/bs";
 import { RiKakaoTalkFill } from "react-icons/ri";
 import { AiFillYoutube } from "react-icons/ai";

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import "./Aboutus.css";
+import "../styles/Aboutus.css";
 import { ReactComponent as Logo} from "../img/Mainlogo.svg";
 import backtest from "../img/backtestImg.jpg";
 import port from "../img/portImg.jpg";
