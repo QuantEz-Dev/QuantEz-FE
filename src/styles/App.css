@@ -164,11 +164,12 @@ div {
   background-color: #f8f9fb;
 }
 
-#container {
+/* #container {
   margin: 0 auto;
   height: 100%;
   font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;
-}
+} */
+
 #header-top {
   height: 40px;
   width: 100%;

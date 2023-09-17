@@ -1,4 +1,5 @@
 import "./styles/App.css";
+import { GlobalFont } from "./styles/GlobalFont.styled";
 import { Home } from "./pages/Home";
 import { Login } from "./components/Login";
 import { Aboutus } from "./pages/Aboutus";
@@ -30,6 +31,7 @@ function App() {
   };
   return (
     <div className="App">
+      <GlobalFont />
       <Router>
         <ScrollToTop />
         <Navbar />
