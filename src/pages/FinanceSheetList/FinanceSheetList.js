@@ -1,4 +1,4 @@
-import { FinanceSheetCat } from "../components/FinanceSheetCat";
+import { FinanceSheetCat } from "./FinanceSheetCat";
 export const FinanceSheetList = () => {
   return (
       <FinanceSheetCat />

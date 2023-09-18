@@ -1,5 +1,5 @@
-import { Content1 } from "../../components/Content1/Content1";
-import { Sheets } from "../../components/Sheets";
+import { Content1 } from "./Content1/Content1";
+import { Sheets } from "./Sheets";
 
 
 export const FinanceSheet1 = () => {
