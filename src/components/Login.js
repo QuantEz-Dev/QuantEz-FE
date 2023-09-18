@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-
-import "../styles/Login.css";
-import * as Components from "../styles/Login.styled";
+import * as S from "../styles/Login.styled";
 
 export const Login = () => {
   const [signIn, toggle] = useState(true);
@@ -10,73 +8,60 @@ export const Login = () => {
   // const [userEmailReg, setUserEmailReg] = useState("");
 
   return (
-    <Components.Wrap>
-      <Components.Container>
-        <Components.SignUpContainer signinIn={signIn}>
-          <Components.Form>
-            <Components.Title>Create Account</Components.Title>
-            <Components.Input
-              name="name"
-              type="text"
-              placeholder="Name"
-              required=""
-            />
-            <Components.Input
+    <S.Wrap>
+      <S.Container>
+        <S.SignUpContainer signinIn={signIn}>
+          <S.Form>
+            <S.Title>Create Account</S.Title>
+            <S.Input name="name" type="text" placeholder="Name" required="" />
+            <S.Input
               name="email"
               type="email"
               placeholder="Email"
               required=""
             />
-            <Components.Input
+            <S.Input
               name="password"
               type="password"
               placeholder="Password"
               required=""
             />
-            <Components.Button type="submit">Sign Up</Components.Button>
-          </Components.Form>
-        </Components.SignUpContainer>
+            <S.Button type="submit">Sign Up</S.Button>
+          </S.Form>
+        </S.SignUpContainer>
 
-        <Components.SignInContainer signinIn={signIn}>
-          <Components.Form>
-            <Components.Title>Sign in</Components.Title>
-            <Components.Input name="email" type="email" placeholder="Email" />
-            <Components.Input
-              name="password"
-              type="password"
-              placeholder="Password"
-            />
-            <Components.Anchor href="#">
-              Forgot your password?
-            </Components.Anchor>
-            <Components.Button type="submit">Sign In</Components.Button>
-          </Components.Form>
-        </Components.SignInContainer>
+        <S.SignInContainer signinIn={signIn}>
+          <S.Form>
+            <S.Title>Sign in</S.Title>
+            <S.Input name="email" type="email" placeholder="Email" />
+            <S.Input name="password" type="password" placeholder="Password" />
+            <S.Anchor href="#">Forgot your password?</S.Anchor>
+            <S.Button type="submit">Sign In</S.Button>
+          </S.Form>
+        </S.SignInContainer>
 
-        <Components.OverlayContainer signinIn={signIn}>
-          <Components.Overlay signinIn={signIn}>
-            <Components.LeftOverlayPanel signinIn={signIn}>
-              <Components.Title>Welcome Back!</Components.Title>
-              <Components.Paragraph>
+        <S.OverlayContainer signinIn={signIn}>
+          <S.Overlay signinIn={signIn}>
+            <S.LeftOverlayPanel signinIn={signIn}>
+              <S.Title>Welcome Back!</S.Title>
+              <S.Paragraph>
                 로그인하고 퀀티지가 제공하는<br></br>다양한 서비스를 경험하세요!
-              </Components.Paragraph>
-              <Components.GhostButton onClick={() => toggle(true)}>
+              </S.Paragraph>
+              <S.GhostButton onClick={() => toggle(true)}>
                 Sign In
-              </Components.GhostButton>
-            </Components.LeftOverlayPanel>
+              </S.GhostButton>
+            </S.LeftOverlayPanel>
 
-            <Components.RightOverlayPanel signinIn={signIn}>
-              <Components.Title>Hello, QuantEZ</Components.Title>
-              <Components.Paragraph>
-                세상에서 가장 쉬운 투자, QuantEZ
-              </Components.Paragraph>
-              <Components.GhostButton onClick={() => toggle(false)}>
+            <S.RightOverlayPanel signinIn={signIn}>
+              <S.Title>Hello, QuantEZ</S.Title>
+              <S.Paragraph>세상에서 가장 쉬운 투자, QuantEZ</S.Paragraph>
+              <S.GhostButton onClick={() => toggle(false)}>
                 Sign Up
-              </Components.GhostButton>
-            </Components.RightOverlayPanel>
-          </Components.Overlay>
-        </Components.OverlayContainer>
-      </Components.Container>
-    </Components.Wrap>
+              </S.GhostButton>
+            </S.RightOverlayPanel>
+          </S.Overlay>
+        </S.OverlayContainer>
+      </S.Container>
+    </S.Wrap>
   );
 };

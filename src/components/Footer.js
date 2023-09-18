@@ -16,8 +16,8 @@ export const Footer = () => {
             </li>
             <li class="footer-left-li-2">
               <a
-                href="mailto:ljh990722@g.hongik.ac.kr"
                 class="footer-link-email"
+                href="mailto:ljh990722@g.hongik.ac.kr"
               >
                 문의 : ljh990722@g.hongik.ac.kr
               </a>

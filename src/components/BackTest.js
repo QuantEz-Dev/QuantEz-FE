@@ -1,6 +1,4 @@
-// import "./BackTest.css";
-
 export const BackTest = () => {
-    return <div></div>;
+    return <div>백 테스트 페이지</div>;
   };
   

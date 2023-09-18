@@ -121,7 +121,7 @@ export const Aboutus = () => {
                                         </p>
                                         <div className='tabCon-btn-box'>
                                             <span className='tabCon-btn'>
-                                                <Link to="/financeSheetlist">재무제표</Link>
+                                                <Link to="/financeSheetlist">학습하기</Link>
                                             </span>
                                         </div>
                                     </div>
