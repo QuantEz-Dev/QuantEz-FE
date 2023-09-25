@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ReactComponent as Mainlogo } from "../img/Mainlogo.svg";
+import { ReactComponent as Mainlogo } from "../assets/img/Mainlogo.svg";
 import "../styles/Navbar.css";
 export const Navbar = () => {
   return (

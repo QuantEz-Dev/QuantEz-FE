@@ -13,7 +13,7 @@
   height: 1189px;
   position: relative;
   border-top: 4px #e5e7e9 solid;
-  background: url(../img/why_1_bg.png) no-repeat center center;
+  background: url(../assets/img/why_1_bg.png) no-repeat center center;
   background-size: cover;
 }
 .intro-1-text {
@@ -159,7 +159,7 @@
 .tabConTop-right-bg {
   position: relative;
   height: 100%;
-  background: url(../img/intro_bg_2.png) no-repeat right bottom;
+  background: url(../assets/img/intro_bg_2.png) no-repeat right bottom;
 }
 .tabConTop-right-bg img {
   position: absolute;

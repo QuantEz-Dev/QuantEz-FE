@@ -438,7 +438,7 @@
   }
   label.css-label {
     margin-right: 40px;
-    background-image: url(../img/btn_radio.png);
+    background-image: url(../assets/img/btn_radio.png);
     -webkit-touch-callout: none;
     user-select: none;
   }
@@ -523,7 +523,7 @@
     border: 0;
   }
   label.checkbox_label_np {
-    background-image: url(../img/img_checkbg_off.png);
+    background-image: url(../assets/img/img_checkbg_off.png);
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
@@ -542,7 +542,7 @@
   }
   label.checkbox_label_np.checked,
   input[type="checkbox"].check_np:checked + label.checkbox_label_np {
-    background-image: url(../img/img_checkbg_on.png);
+    background-image: url(../assets/img/img_checkbg_on.png);
     background-position: 0 0 !important;
   }
   
@@ -1094,7 +1094,7 @@
     height: 18px;
     cursor: pointer;
     margin-left: -28px;
-    background: url(../img/icn_srch.png) no-repeat center center;
+    background: url(../assets/img/icn_srch.png) no-repeat center center;
     vertical-align: middle;
   }
   .pop-conditional .btn-ent {
@@ -1342,7 +1342,7 @@
   }
   .main-banner-1-img {
     height: 400px;
-    background: url("../img/main_banner_1.svg") right bottom no-repeat;
+    background: url("../assets/img/main_banner_1.svg") right bottom no-repeat;
     width: 100%;
     display: inline-block;
     padding-right: 50px;
@@ -1417,7 +1417,7 @@
   }
   .main-banner-2-img {
     height: 400px;
-    background: url("../img/main_banner_.svg") left bottom no-repeat;
+    background: url("../assets/img/main_banner_.svg") left bottom no-repeat;
     width: 100%;
     display: inline-block;
     padding-left: 50px;
@@ -1454,7 +1454,7 @@
   .main-section-bg {
     height: 100%;
     margin-right: -60%;
-    background: url(../img/main_section_2_bg_2.png) no-repeat right 57px;
+    background: url(../assets/img/main_section_2_bg_2.png) no-repeat right 57px;
   }
   .main-section-left {
     position: absolute;
@@ -1489,7 +1489,7 @@
     letter-spacing: -0.025em;
     padding-right: 48px;
     cursor: pointer;
-    background: url(../img/repeat.png) no-repeat right center;
+    background: url(../assets/img/repeat.png) no-repeat right center;
   }
   .main-section-right {
     position: absolute;
@@ -1513,7 +1513,7 @@
     height: 100%;
     width: 2000px;
     margin-left: -1000px;
-    background: url(../img/ms2_bg.jpg) no-repeat center center;
+    background: url(../assets/img/ms2_bg.jpg) no-repeat center center;
   }
   .ms-item-cover-in {
     position: relative;
@@ -1699,7 +1699,7 @@
     width: 100%;
     position: absolute;
     margin: 0 auto;
-    background: #5400cf url(../img/footer.svg) no-repeat center bottom;
+    background: #5400cf url(../assets/img/footer.svg) no-repeat center bottom;
     background-size: cover;
   }
   #footer a {

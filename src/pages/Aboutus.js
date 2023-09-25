@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "../styles/Aboutus.css";
-import { ReactComponent as Logo} from "../img/Mainlogo.svg";
-import backtest from "../img/backtestImg.jpg";
-import port from "../img/portImg.jpg";
-import tax from "../img/taxImg.jpg";
+import { ReactComponent as Logo} from "../assets/img/Mainlogo.svg";
+import backtest from "../assets/img/backtestImg.jpg";
+import port from "../assets/img/portImg.jpg";
+import tax from "../assets/img/taxImg.jpg";
 
 export const Aboutus = () => {
     const [toggle, setToggle] = useState(1)

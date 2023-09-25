@@ -1,9 +1,9 @@
 // import { BackTest } from '../../client/src/components/BackTest';
 import style from "../styles/CreatePort.module.css";
 import classNames from "classnames/bind";
-import arrImg from "../img/icn_arr_r.png";
-import undoImg from "../img/icn_undo.png";
-import redoImg from "../img/icn_redo.png";
+import arrImg from "../assets/img/icn_arr_r.png";
+import undoImg from "../assets/img/icn_undo.png";
+import redoImg from "../assets/img/icn_redo.png";
 const cx = classNames.bind(style);
 
 export const CreatePort = () => {

@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import NotoSansKR from "../fonts/NotoSansKR.ttf";
-import NanumGothic from "../fonts/NanumGothic.ttf";
+import NotoSansKR from "../assets/fonts/NotoSansKR.ttf";
+import NanumGothic from "../assets/fonts/NanumGothic.ttf";
 
 export const GlobalFont = createGlobalStyle`    
      @font-face {

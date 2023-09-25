@@ -1,14 +1,14 @@
 import "../../styles/FinanceSheetCat.css";
-import searchIcon1 from "../../img/search-icon-01.png";
-import searchIcon2 from "../../img/search-icon-02.png";
-import searchIcon3 from "../../img/search-icon-03.png";
-import searchIcon4 from "../../img/search-icon-04.png";
-import searchIcon5 from "../../img/search-icon-05.png";
-import tabImg1 from "../../img/tabs-image-01.jpg";
-import tabImg2 from "../../img/tabs-image-02.jpg";
-import tabImg3 from "../../img/tabs-image-03.jpg";
-import tabImg4 from "../../img/tabs-image-04.jpg";
-import tabImg5 from "../../img/tabs-image-05.jpg";
+import searchIcon1 from "../../assets/img/search-icon-01.png";
+import searchIcon2 from "../../assets/img/search-icon-02.png";
+import searchIcon3 from "../../assets/img/search-icon-03.png";
+import searchIcon4 from "../../assets/img/search-icon-04.png";
+import searchIcon5 from "../../assets/img/search-icon-05.png";
+import tabImg1 from "../../assets/img/tabs-image-01.jpg";
+import tabImg2 from "../../assets/img/tabs-image-02.jpg";
+import tabImg3 from "../../assets/img/tabs-image-03.jpg";
+import tabImg4 from "../../assets/img/tabs-image-04.jpg";
+import tabImg5 from "../../assets/img/tabs-image-05.jpg";
 import { Link } from "react-router-dom";
 
 export const FinanceSheetCat = () => {
