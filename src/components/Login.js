@@ -74,10 +74,16 @@ export const Login = () => {
         <S.SignInContainer signinIn={signIn}>
           <S.Form>
             <S.Title>Sign in</S.Title>
+<<<<<<< Updated upstream
             <S.Input name="email" type="email" placeholder="Email" required />
             <S.Input name="password" type="password" placeholder="Password" required />
             <S.Anchor href="#">Forgot your password?</S.Anchor>
             <S.Button type="submit">Sign In</S.Button>
+=======
+            <S.Input name="email" type="email" placeholder="Email" />
+            <S.Input name="password" type="password" placeholder="Password" />
+            <S.SignInButton type="submit">Sign In</S.SignInButton>
+>>>>>>> Stashed changes
           </S.Form>
         </S.SignInContainer>
 
