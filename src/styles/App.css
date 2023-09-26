@@ -474,7 +474,7 @@ a:hover {
   top: 10px;
 }
 
-// Port 페이지 스타일링
+/* Port 페이지 스타일링 */
 
 .port-container {
   min-height: 580px;
@@ -490,7 +490,7 @@ a:hover {
 .port-enter-box {
   width: 930px;
   margin: 0 auto;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .port-enter-box-in {
   width: 930px;
@@ -515,7 +515,7 @@ a:hover {
   position: relative;
   height: 210px;
 }
-.pei-2 .port-enter-item-in{
+.pei-2 .port-enter-item-in {
   float: right;
 }
 .pei-1 .img-box {
@@ -578,6 +578,6 @@ a:hover {
 }
 .port-enter-btn-item:hover .port-enter-btn-item-in {
   color: #fff;
-  background: #5400CF;
-  background-color: #5400CF;
+  background: #5400cf;
+  background-color: #5400cf;
 }
