@@ -429,10 +429,11 @@ a:hover {
   font-weight: bold;
 }
 .footer-socialLink a,
-.footer-socialLink span {
+.footer-socialLink span,
+.footer-socialLink div {
   display: inline-block;
 
-  margin-right: 5px;
+  margin-right: 22.5px;
   cursor: pointer;
 }
 .footer-right {

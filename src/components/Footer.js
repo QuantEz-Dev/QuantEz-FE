@@ -23,18 +23,15 @@ export const Footer = () => {
               </a>
             </li>
             <li class="footer-socialLink">
-              <a href="http://facebook.com/NewsyStock" target="_blank">
+              <div>
                 <BsFacebook color="#1877f2" fontSize="1.5em" />
-              </a>
-              <a>
+              </div>
+              <div>
                 <RiKakaoTalkFill color="#ffe812" fontSize="1.5em" />
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCil6SlGvpvs7H1t5txMPdFw"
-                target="_blank"
-              >
+              </div>
+              <div>
                 <AiFillYoutube color="#ff0000" fontSize="1.5em" />
-              </a>
+              </div>
             </li>
           </ul>
         </div>
