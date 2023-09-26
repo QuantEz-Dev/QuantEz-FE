@@ -634,14 +634,16 @@ export const CreatePort = () => {
         <div className={cx("area_location")} id={style.locNewPort}>
           <ul>
             <li className={cx("fl")}>
-              <p className={cx("fl", "title")}>월봉 백테스팅 포트 만들기</p>
-              <p className={cx("fl", "info")}>
+              <p className={cx("fl", "title")} style={{ margin: "0px" }}>
+                월봉 백테스팅 포트 만들기
+              </p>
+              <p className={cx("fl", "info")} style={{ margin: "0px" }}>
                 퀀티지가 제공하는 다양한 조건으로 나만의 투자전략을 만들어
                 보세요.
               </p>
             </li>
             <li className={cx("fr")}>
-              <p className={cx("crumbs")}>
+              <p className={cx("crumbs")} style={{ margin: "0px" }}>
                 백테스트
                 <span></span>
                 월봉 백테스팅 포트 만들기
@@ -659,11 +661,11 @@ export const CreatePort = () => {
                 style={{ width: "50%" }}
                 className={cx("on")}
               >
-                <p>Step.1 기본 설정</p>
+                <p style={{ margin: "0px" }}>Step.1 기본 설정</p>
                 <span>기본 조건들을 설정하세요.</span>
               </li>
               <li id={style.tabMenu1} style={{ width: "50%" }} class>
-                <p>Step 2. 포트 완성!</p>
+                <p style={{ margin: "0px" }}>Step 2. 포트 완성!</p>
                 <span>백테스팅 포트가 완성되었습니다.</span>
               </li>
             </ul>
@@ -674,7 +676,9 @@ export const CreatePort = () => {
               {/* 포트 제목, 포트 설명 */}
               <div className={cx("port_subBox", "mt-0")}>
                 <div className={cx("fl", "box-port-title")}>
-                  <p className={cx("subtitle_16px")}>포트 제목</p>
+                  <p className={cx("subtitle_16px")} style={{ margin: "0px" }}>
+                    포트 제목
+                  </p>
                   <div>
                     <input
                       type="text"
@@ -703,7 +707,7 @@ export const CreatePort = () => {
                   </div>
                 </div>
                 <div className={cx("fr", "box-port-description")}>
-                  <p className={cx("subtitle_16px")}>
+                  <p className={cx("subtitle_16px")} style={{ margin: "0px" }}>
                     포트 설명
                     <span
                       className={cx("infotxt_12px666")}
@@ -744,7 +748,7 @@ export const CreatePort = () => {
                   </div>
                 </div>
                 <div className={cx("box-port-sample")}>
-                  <p className={cx("subtitle_16px")}>
+                  <p className={cx("subtitle_16px")} style={{ margin: "0px" }}>
                     샘플포트 만들기
                     <span
                       className={cx("infotxt_12px666")}
@@ -1050,7 +1054,7 @@ export const CreatePort = () => {
                     </button>
                   </li>
                   <li id={style.section_univ} className={cx("box_universe")}>
-                    <p>
+                    <p style={{ margin: "0px" }}>
                       <input
                         type="checkbox"
                         id={style["cbUnivKOSPIML-ALL"]}
@@ -1064,7 +1068,7 @@ export const CreatePort = () => {
                         코스피 중대형
                       </label>
                     </p>
-                    <p>
+                    <p style={{ margin: "0px" }}>
                       <input
                         type="checkbox"
                         id={style["cbUnivKOSPIMS-ALL"]}
@@ -1078,7 +1082,7 @@ export const CreatePort = () => {
                         코스피 중소형
                       </label>
                     </p>
-                    <p>
+                    <p style={{ margin: "0px" }}>
                       <input
                         type="checkbox"
                         id={style.cbUnivKOSDAQL}
@@ -1092,7 +1096,7 @@ export const CreatePort = () => {
                         코스닥 대형
                       </label>
                     </p>
-                    <p>
+                    <p style={{ margin: "0px" }}>
                       <input
                         type="checkbox"
                         id={style.cbUnivKOSDAQM}
@@ -1106,7 +1110,7 @@ export const CreatePort = () => {
                         코스닥 중형
                       </label>
                     </p>
-                    <p>
+                    <p style={{ margin: "0px" }}>
                       <input
                         type="checkbox"
                         id={style.cbUnivKOSDAQS}
@@ -1120,7 +1124,7 @@ export const CreatePort = () => {
                         코스닥 소형
                       </label>
                     </p>
-                    <p>
+                    <p style={{ margin: "0px" }}>
                       <input
                         type="checkbox"
                         id={style.cbUnivKOSDAQXS}
@@ -1134,7 +1138,7 @@ export const CreatePort = () => {
                         코스닥 초소형
                       </label>
                     </p>
-                    <p>
+                    <p style={{ margin: "0px" }}>
                       <input
                         type="checkbox"
                         id={style.cbUnivETF}
@@ -1178,7 +1182,7 @@ export const CreatePort = () => {
                       className={cx("fl", "addCondition")}
                       onclick="popupCondition()"
                     >
-                      <p>
+                      <p style={{ margin: "0px" }}>
                         <span className={cx("button_addCondition")}>+</span>
                         <span
                           className={cx("infotxt_13px333", "bold", "ml8px")}
@@ -1227,10 +1231,11 @@ export const CreatePort = () => {
                       <p
                         className={cx("subtitle_14px")}
                         id={style.BuyCondExpTxt}
+                        style={{ margin: "0px" }}
                       ></p>
                     </div>
                     <div className={cx("box-conditionInput-r")}>
-                      <div className={cx("mb-5")}>
+                      <div className={cx("mb-5")} style={{ margin: "0px" }}>
                         <button
                           type="button"
                           className={cx("ml4px", "btn_medium", "btn_white")}
