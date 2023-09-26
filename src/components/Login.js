@@ -26,7 +26,7 @@ export const Login = () => {
               placeholder="Password"
               required=""
             />
-            <S.Button type="submit">Sign Up</S.Button>
+            <S.SignUpButton type="submit">Sign Up</S.SignUpButton>
           </S.Form>
         </S.SignUpContainer>
 
@@ -36,7 +36,7 @@ export const Login = () => {
             <S.Input name="email" type="email" placeholder="Email" />
             <S.Input name="password" type="password" placeholder="Password" />
             <S.Anchor href="#">Forgot your password?</S.Anchor>
-            <S.Button type="submit">Sign In</S.Button>
+            <S.SignInButton type="submit">Sign In</S.SignInButton>
           </S.Form>
         </S.SignInContainer>
 
