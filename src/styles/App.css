@@ -159,6 +159,11 @@ div {
   display: block;
 }
 
+/* #container {
+  margin: 0 auto;
+  height: 100%;
+  font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;
+} */
 #header {
   height: 160px;
   font-family: "Noto Sans KR", sans-serif;
@@ -166,12 +171,6 @@ div {
   padding-right: 30px;
   background-color: #f8f9fb;
 }
-
-/* #container {
-  margin: 0 auto;
-  height: 100%;
-  font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;
-} */
 
 #header-top {
   height: 40px;

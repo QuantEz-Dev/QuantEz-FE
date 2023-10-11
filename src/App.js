@@ -29,6 +29,7 @@ function App() {
 
     return null;
   };
+  
   return (
     <div className="App">
       <GlobalFont />

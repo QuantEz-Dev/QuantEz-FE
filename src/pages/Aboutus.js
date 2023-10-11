@@ -14,7 +14,7 @@ export const Aboutus = () => {
     }
 
     return (
-        <div className="wrap intro-wrap">
+        <div className="intro-wrap">
             <div className="intro-container">
                 <div className="intro-content">
                     <div className="intro-1">
@@ -36,9 +36,9 @@ export const Aboutus = () => {
                     <div className="intro-2">
                         <div className='intro-tab'>
                             <ul className='tab-header'>
-                                <li className='tab-btn active-tab' onClick={()=> updateToggle(1)}>백테스팅 튜토리얼</li>
-                                <li className='tab-btn active-tab' onClick={()=>updateToggle(2)}>포트 만들기</li>
-                                <li className='tab-btn active-tab' onClick={()=>updateToggle(3)}>재무제표 학습하기</li>
+                                <li className='tab-btn' onClick={()=> updateToggle(1)}>백테스팅 튜토리얼</li>
+                                <li className='tab-btn' onClick={()=>updateToggle(2)}>포트 만들기</li>
+                                <li className='tab-btn' onClick={()=>updateToggle(3)}>재무제표 학습하기</li>
                             </ul>
                             <div className={toggle === 1 ? "show-contents" : "tabContent"}>
                                 <div className='tabConTop'>
