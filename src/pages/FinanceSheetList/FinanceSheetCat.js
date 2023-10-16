@@ -158,10 +158,7 @@ export const FinanceSheetCat = () => {
                                     홍보하고 판매한다.
                                   </p>
                                   <div class="main-white-button">
-                                    <Link
-                                      class="FSstart"
-                                      to="/financeSheetlist/financeSheet-trade2"
-                                    >
+                                    <Link class="FSstart" to="#">
                                       <i class="fa fa-eye"></i>학습 시작하기
                                     </Link>
                                   </div>
@@ -192,10 +189,7 @@ export const FinanceSheetCat = () => {
                                     성장을 평가한다.
                                   </p>
                                   <div class="main-white-button">
-                                    <Link
-                                      class="FSstart"
-                                      to="/financeSheetlist/financeSheet-trade3"
-                                    >
+                                    <Link class="FSstart" to="#">
                                       <i class="fa fa-eye"></i>학습 시작하기
                                     </Link>
                                   </div>
@@ -219,10 +213,7 @@ export const FinanceSheetCat = () => {
                                   <h4>성과 창출을 위한 재무제표의 기법</h4>
                                   <p>재무제표의 세부 구성과 분석</p>
                                   <div class="main-white-button">
-                                    <Link
-                                      class="FSstart"
-                                      to="/financeSheetlist/financeSheet-trade4"
-                                    >
+                                    <Link class="FSstart" to="#">
                                       <i class="fa fa-eye"></i>학습 시작하기
                                     </Link>
                                   </div>
