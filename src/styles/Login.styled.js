@@ -94,16 +94,12 @@ export const Button = styled.button`
        outline: none;
    }
 `;
+export const SignInButton = styled(Button)`
+   margin-top: 30px;
+`;
 export const GhostButton = styled(Button)`
 background-color: transparent;
 border-color: #ffffff;
-`;
-
-export const Anchor = styled.a`
-color: #333;
-font-size: 14px;
-text-decoration: none;
-margin: 15px 0;
 `;
 export const OverlayContainer = styled.div`
 position: absolute;

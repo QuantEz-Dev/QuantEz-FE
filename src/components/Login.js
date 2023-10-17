@@ -137,7 +137,7 @@ export const Login = () => {
               required
               onChange={e => setPassword1(e.target.value)}
             />
-            <S.Anchor href="#">Forgot your password?</S.Anchor>
+            {/* <S.Anchor href="#">Forgot your password?</S.Anchor> */}
             <S.Button type="submit">Sign In</S.Button>
           </S.Form>
         </S.SignInContainer>
