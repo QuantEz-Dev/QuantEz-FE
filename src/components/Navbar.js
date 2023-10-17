@@ -19,6 +19,12 @@ export const Navbar = () => {
               </Link>
               <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
             </li>
+            <li>
+              <Link class="login" to="/QA">
+                질문게시판
+              </Link>
+              <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
+            </li>
             <li class="in-select">
               <select>
                 <option>연관 사이트</option>

@@ -15,6 +15,7 @@ import { FinanceSheet2 } from "./pages/FinanceSheet/FinanceSheet-trade2";
 import { FinanceSheet3 } from "./pages/FinanceSheet/FinanceSheet-trade3";
 import { FinanceSheet4 } from "./pages/FinanceSheet/FinanceSheet-trade4";
 import { AssetManage } from "./pages/AssetManage";
+import { QA } from "./pages/QA";
 import { Navbar } from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Footer } from "./components/Footer"; 
@@ -42,6 +43,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Join" element={<Login />} />
           <Route path="/Mypage" element={<MyPage/>} />
+          <Route path="/QA" element={<QA/>}/>
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/tutorial" element={<Tutorial />}/>
           <Route path="/port" element={<Port />} />
