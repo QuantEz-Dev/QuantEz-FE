@@ -2,6 +2,7 @@ import "./styles/App.css";
 import { GlobalFont } from "./styles/GlobalFont.styled";
 import { Home } from "./pages/Home";
 import { Login } from "./components/Login";
+import { MyPage } from "./components/MyPage";
 import { Aboutus } from "./pages/Aboutus";
 import { Tutorial } from "./pages/Tutorial";
 import { Port } from "./pages/Port";
@@ -13,10 +14,11 @@ import { FinanceSheet1 } from "./pages/FinanceSheet/FinanceSheet-trade1";
 import { FinanceSheet2 } from "./pages/FinanceSheet/FinanceSheet-trade2";
 import { FinanceSheet3 } from "./pages/FinanceSheet/FinanceSheet-trade3";
 import { FinanceSheet4 } from "./pages/FinanceSheet/FinanceSheet-trade4";
+import { AssetManage } from "./pages/AssetManage";
 import { Navbar } from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Footer } from "./components/Footer";
-import { useEffect } from "react";
+import { Footer } from "./components/Footer"; 
+import { useEffect, React } from "react";
 import { useLocation } from "react-router-dom";
 
 function App() {
@@ -39,9 +41,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Join" element={<Login />} />
+          <Route path="/Mypage" element={<MyPage/>} />
           <Route path="/aboutus" element={<Aboutus />} />
-          <Route path="/tutorial" element={<Tutorial />} />
+          <Route path="/tutorial" element={<Tutorial />}/>
           <Route path="/port" element={<Port />} />
+          <Route path="/assetManage" element={<AssetManage />}
+          />
           <Route
             path="/tutorial/create-port-tutorial"
             element={<CreatePortTutorial />}
@@ -72,6 +77,7 @@ function App() {
             path="/financeSheetlist/financeSheet-trade4"
             element={<FinanceSheet4 />}
           />
+        
         </Routes>
         <Footer />
       </Router>

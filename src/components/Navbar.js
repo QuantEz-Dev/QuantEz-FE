@@ -14,9 +14,9 @@ export const Navbar = () => {
               <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
             </li>
             <li>
-              <span class="login" onclick="">
-                고객센터
-              </span>
+              <Link class="login" to="/Mypage">
+                마이페이지
+              </Link>
               <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
             </li>
             <li class="in-select">
@@ -37,6 +37,12 @@ export const Navbar = () => {
         <nav id="gnb">
           <ul id="MasterMainMenu">
             <li class="gnb-depth-1">
+              <Link className="gnb-depth-1-btn" to="/assetManage">
+                {" "}
+                자산관리
+              </Link>
+            </li>
+            <li class="gnb-depth-1">
               <Link class="gnb-depth-1-btn" to="/financeSheetlist">
                 {" "}
                 재무제표학습
@@ -48,10 +54,9 @@ export const Navbar = () => {
                 백테스트
                 <li class="gnb-depth-2">
                   <li>
-                    <Link class="gnb-depth-2-btn"> 튜토리얼</Link>
-                    {/* <Link class="gnb-depth-2-btn" to="/tutorial">
+                     <Link class="gnb-depth-2-btn" to="/tutorial">
                       튜토리얼
-                    </Link> */}
+                     </Link>
                   </li>
                   <li>
                     <Link class="gnb-depth-2-btn" to="/port">

@@ -1,47 +1,79 @@
 import React, { useState } from "react";
 import * as S from "../styles/Login.styled";
+import Axios from "axios";
 
 export const Login = () => {
   const [signIn, toggle] = useState(true);
-  const [usernameReg, setUsernameReg] = useState("");
-  const [passReg, setPasswordReg] = useState("");
-  const [userEmailReg, setUserEmailReg] = useState("");
 
-  const onSubmit = e => {
+  const [name, setUserName] = useState('');
+  const [password1, setPassword1] = useState('');
+  const [password2, setPassword2] = useState('');
+  const [email, setUserEmail] = useState('');
+
+  const onChangeName = (e) => {
+    setUserName(e.target.value);
+  };
+  const onChangePw1 = (e) => {
+    setPassword1(e.target.value);
+  };
+  const onChangePw2 = (e) => {
+    setPassword2(e.target.value);
+  };
+  const onChangeEmail = (e) => {
+    setUserEmail(e.target.value);
+  };
+  const onSubmit = (e) => {
     e.preventDefault();
 
     const user = {
-      username: setUsernameReg,
-      email: setUserEmailReg,
-      password: setPasswordReg
-    };
+      email: email,
+      password1: password1,
+      password2: password2,
+      username: name
+    }
 
-    fetch("http://127.0.0.1:8000/api/", {
-      method: 'POST',
-      headers: {
-        'Content-Type' : 'application/json'
-      },
-      body: JSON.stringify(user)
-    })
-      .then(res => res.json)
-      .then(data => {
-        if (data.key) {
+    if(password1 !== password2) {
+      alert('비밀번호가 다릅니다')
+      return false;
+    }
+
+    Axios.post('http://localhost:8000/common/signup/', user)
+      .then(res => {
+        if(res.data.key) {
           localStorage.clear();
-          localStorage.setItem('token', data.key);
-          window.location.replace('http://localhost:3000/login');
-      } else {
-        setUsernameReg('');
-        setUserEmailReg('');
-        setPasswordReg('');
-        localStorage.clear();
+          localStorage.setItem('token', res.data.key);
+          window.location.replace('/');
+        } else {
+          setUserName('');
+          setPassword1('');
+          setPassword2('');
+          setUserEmail('');
+          localStorage.clear();
         }
-      });
-  };
+      })
+      .catch(err => {
+        console.clear();
+        alert('아이디 혹은 비밀번호가 일치하지 않습니다');
+      })
 
-  const onChange = e => {
-    setUsernameReg(e.target.value);
-    setUserEmailReg(e.target.value);
-    setPasswordReg(e.target.value);
+    Axios.post('http://localhost:8000/common/login', user)
+      .then(res => {
+        if(res.data.key) {
+          localStorage.clear();
+          localStorage.setItem('token'. res.data.key)
+          window.location.replace('https://localhost:3000')
+        } else {
+          setUserName('');
+          setPassword1('');
+          localStorage.clear();
+        }
+      })
+      .catch(err => {
+        console.clear();
+        alert('아이디 또는 비밀번호가 일치하지 않습니다.');
+        setUserName('');
+        setPassword1('');
+      })
   };
 
   return (
@@ -50,22 +82,37 @@ export const Login = () => {
         <S.SignUpContainer signinIn={signIn}>
           <S.Form onSubmit={onSubmit}>
             <S.Title>Create Account</S.Title>
-            <S.Input name="name" type="text" value={setUsernameReg} placeholder="Name" required onChange={e => setUsernameReg(e.target.value)}/>
             <S.Input
-              name="email"
+              name="email" 
               type="email"
-              value={setUserEmailReg}
               placeholder="Email"
+              value = {email}
+              onChange={onChangeEmail}
               required
-              onChange={e => setUserEmailReg(e.target.value)}
             />
             <S.Input
-              name="password"
+              name="password1"
               type="password"
               placeholder="Password"
-              value={setPasswordReg}
+              value={password1}
+              onChange={onChangePw1}
               required
-              onChange={e => setPasswordReg(e.target.value)}
+            />
+            <S.Input
+              name="password2"
+              type="password"
+              placeholder="Confirm Password"
+              value={password2}
+              onChange={onChangePw2}
+              required
+            />
+            <S.Input
+              name="username"
+              type="text"
+              placeholder="Name"
+              value={name}
+              onChange={onChangeName}
+              required
             />
             <S.Button type="submit">Sign Up</S.Button>
           </S.Form>
@@ -74,8 +121,22 @@ export const Login = () => {
         <S.SignInContainer signinIn={signIn}>
           <S.Form>
             <S.Title>Sign in</S.Title>
-            <S.Input name="email" type="email" placeholder="Email" required />
-            <S.Input name="password" type="password" placeholder="Password" required />
+            <S.Input 
+              name="name"
+              placeholder="Name"
+              type="text"
+              value={name}
+              required
+              onChange={e=>setUserName(e.target.value)}
+            />
+            <S.Input
+              name="password1"
+              placeholder="Password"
+              type="password"
+              value={password1}
+              required
+              onChange={e => setPassword1(e.target.value)}
+            />
             <S.Anchor href="#">Forgot your password?</S.Anchor>
             <S.Button type="submit">Sign In</S.Button>
           </S.Form>
@@ -105,4 +166,4 @@ export const Login = () => {
       </S.Container>
     </S.Wrap>
   );
-};
+};  
