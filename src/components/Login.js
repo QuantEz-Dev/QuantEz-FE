@@ -3,9 +3,6 @@ import * as S from "../styles/Login.styled";
 
 export const Login = () => {
   const [signIn, toggle] = useState(true);
-  // const [usernameReg, setUsernameReg] = useState("");
-  // const [passReg, setPasswordReg] = useState("");
-  // const [userEmailReg, setUserEmailReg] = useState("");
 
   return (
     <S.Wrap>

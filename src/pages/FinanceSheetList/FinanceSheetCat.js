@@ -65,7 +65,7 @@ export const FinanceSheetCat = () => {
                           <span class="icon">
                             <img src={searchIcon5} alt="hi5" />
                           </span>
-                          창업 4단계
+                          재무제표 심화학습
                         </div>
                       </div>
                     </div>

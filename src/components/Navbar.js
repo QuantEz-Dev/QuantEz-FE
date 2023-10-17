@@ -1,7 +1,6 @@
 // import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Mainlogo } from "../assets/img/Mainlogo.svg";
-import "../styles/Navbar.css";
 export const Navbar = () => {
   // const [value, setValue] = useState("");
   return (
@@ -14,7 +13,7 @@ export const Navbar = () => {
               <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
             </li>
             <li>
-              <span class="login" onclick="">
+              <span onclick="">
                 고객센터
               </span>
               <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
@@ -43,7 +42,7 @@ export const Navbar = () => {
           <Mainlogo />
         </Link>
         <nav id="gnb">
-          <ul id="MasterMainMenu">
+          <ul>
             <li class="gnb-depth-1">
               <Link class="gnb-depth-1-btn" to="/financeSheetlist">
                 {" "}
@@ -56,13 +55,13 @@ export const Navbar = () => {
                 백테스트
                 <li class="gnb-depth-2">
                   <li>
-                    <Link class="gnb-depth-2-btn"> 튜토리얼</Link>
+                    <Link> 튜토리얼</Link>
                     {/* <Link class="gnb-depth-2-btn" to="/tutorial">
                       튜토리얼
                     </Link> */}
                   </li>
                   <li>
-                    <Link class="gnb-depth-2-btn" to="/port">
+                    <Link to="/port">
                       포트 만들기
                     </Link>
                   </li>
