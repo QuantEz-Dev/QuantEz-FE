@@ -9,11 +9,7 @@ const cx = classNames.bind(style);
 export const CreatePort = () => {
   return (
     <>
-      <div
-        className={cx("pop", "pop-conditional", "pop-style-1")}
-        id={style.divPopCond}
-        style={{ display: "none" }}
-      >
+      <div className={cx("pop", "pop-conditional")} style={{ display: "none" }}>
         <div className={cx("pop-bg")} />
         <div className={cx("pop-in")}>
           <div
@@ -30,7 +26,6 @@ export const CreatePort = () => {
                 placeholder="조건을 단어로 검색해 보세요."
                 className={cx("input-srch")}
                 style={{ width: "40%" }}
-                id={style.ConditionSearch}
                 onkeyup="MPortUI.searchPopCondition();"
               />
               <span className={cx("btn button-search mr-10")} />
@@ -55,27 +50,24 @@ export const CreatePort = () => {
               {/* 왼쪽 박스 */}
               <div
                 className={cx("fl box_condLeft")}
-                id={style.ConditionTreeDiv}
                 tabindex="0"
                 onkeyup="Component.MPortUI.searchPopCondition();"
               >
-                <ul id={style.ConditionTree}>
-                  <li id={style.cmain0} className={cx("depth1")}>
+                <ul>
+                  <li className={cx("depth1")}>
                     <img src="../img/icn_folderOpen.png" />
                     <span className={cx("subtitle_15px")}>종합</span>
                   </li>
                   <li
-                    id={style.csub00}
                     className={cx("depth2")}
                     onclick="Component.MPortUI.openPopConditionTree(0, 0, 2);"
                   >
                     <span className={cx("infotxt_15px")}>
-                      <img id={style.csubimg00} src="img/icn_folderClose.png" />
+                      <img src="img/icn_folderClose.png" />
                       종합점수
                     </span>
                   </li>
                   <li
-                    id={style.citem000}
                     className={cx("depth3")}
                     onclick="Component.MPortUI.setPopupConditionDetail(1, this, 'depth3');"
                     ondblclick="Component.MPortUI.setPopupConditionDetailAndValue(1, this, 'depth3');"
@@ -84,7 +76,6 @@ export const CreatePort = () => {
                     <span className={cx("infotxt_15px")}>종합점수</span>
                   </li>
                   <li
-                    id={style.citem001}
                     className={cx("depth3")}
                     onclick="Component.MPortUI.setPopupConditionDetail(2, this, 'depth3');"
                     ondblclick="Component.MPortUI.setPopupConditionDetailAndValue(2, this, 'depth3');"
@@ -664,7 +655,7 @@ export const CreatePort = () => {
                 <p style={{ margin: "0px" }}>Step.1 기본 설정</p>
                 <span>기본 조건들을 설정하세요.</span>
               </li>
-              <li id={style.tabMenu1} style={{ width: "50%" }} class>
+              <li id={style.tabMenu1} style={{ width: "50%" }}>
                 <p style={{ margin: "0px" }}>Step 2. 포트 완성!</p>
                 <span>백테스팅 포트가 완성되었습니다.</span>
               </li>
@@ -821,7 +812,7 @@ export const CreatePort = () => {
                     <tbody>
                       <tr>
                         <td className={cx("new-port-step1", "taC")}>
-                          <div className={cx("port-hight")}>
+                          <div>
                             <input
                               type="text"
                               id={style.StartDate}
