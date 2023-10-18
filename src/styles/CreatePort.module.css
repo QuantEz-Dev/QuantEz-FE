@@ -153,7 +153,7 @@ textarea {
 }
 
 .mb-5 {
-  /* margin-bottom: 5px !important; */
+  margin-bottom: 5px !important;
 }
 .mb-10 {
   margin-bottom: 10px !important;
@@ -1626,7 +1626,7 @@ option {
   border-radius: 4px;
 }
 .mb-5 {
-  /* margin-bottom: 5px !important; */
+  margin-bottom: 5px !important;
 }
 .radio-box {
   width: 120%;
@@ -1805,7 +1805,7 @@ a:hover {
   position: relative;
   width: 1200px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 40px;
   padding-bottom: 130px;
 }
 

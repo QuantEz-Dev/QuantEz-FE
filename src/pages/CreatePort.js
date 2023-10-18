@@ -9,14 +9,18 @@ const cx = classNames.bind(style);
 export const CreatePort = () => {
   return (
     <>
-      <div className={cx("pop", "pop-conditional")} style={{ display: "none" }}>
+      <div
+        className={cx("pop", "pop-conditional", "pop-style-1")}
+        id={style.divPopCond}
+        style={{ display: "none" }}
+      >
         <div className={cx("pop-bg")} />
         <div className={cx("pop-in")}>
           <div
             className={cx("btn_cls", "pop-close")}
             onclick="popupCondition()"
           >
-            <img src="../img/btn_clsPopup_gray.png" />
+            <img alt="" src="../img/btn_clsPopup_gray.png" />
           </div>
 
           <div className={cx("pop-content")}>
@@ -26,6 +30,7 @@ export const CreatePort = () => {
                 placeholder="조건을 단어로 검색해 보세요."
                 className={cx("input-srch")}
                 style={{ width: "40%" }}
+                id={style.ConditionSearch}
                 onkeyup="MPortUI.searchPopCondition();"
               />
               <span className={cx("btn button-search mr-10")} />
@@ -50,24 +55,31 @@ export const CreatePort = () => {
               {/* 왼쪽 박스 */}
               <div
                 className={cx("fl box_condLeft")}
+                id={style.ConditionTreeDiv}
                 tabindex="0"
                 onkeyup="Component.MPortUI.searchPopCondition();"
               >
-                <ul>
-                  <li className={cx("depth1")}>
-                    <img src="../img/icn_folderOpen.png" />
+                <ul id={style.ConditionTree}>
+                  <li id={style.cmain0} className={cx("depth1")}>
+                    <img alt="" src="../img/icn_folderOpen.png" />
                     <span className={cx("subtitle_15px")}>종합</span>
                   </li>
                   <li
+                    id={style.csub00}
                     className={cx("depth2")}
                     onclick="Component.MPortUI.openPopConditionTree(0, 0, 2);"
                   >
                     <span className={cx("infotxt_15px")}>
-                      <img src="img/icn_folderClose.png" />
+                      <img
+                        alt=""
+                        id={style.csubimg00}
+                        src="img/icn_folderClose.png"
+                      />
                       종합점수
                     </span>
                   </li>
                   <li
+                    id={style.citem000}
                     className={cx("depth3")}
                     onclick="Component.MPortUI.setPopupConditionDetail(1, this, 'depth3');"
                     ondblclick="Component.MPortUI.setPopupConditionDetailAndValue(1, this, 'depth3');"
@@ -76,6 +88,7 @@ export const CreatePort = () => {
                     <span className={cx("infotxt_15px")}>종합점수</span>
                   </li>
                   <li
+                    id={style.citem001}
                     className={cx("depth3")}
                     onclick="Component.MPortUI.setPopupConditionDetail(2, this, 'depth3');"
                     ondblclick="Component.MPortUI.setPopupConditionDetailAndValue(2, this, 'depth3');"
@@ -89,7 +102,11 @@ export const CreatePort = () => {
                     onclick="Component.MPortUI.openPopConditionTree(0, 1, 3);"
                   >
                     <span className={cx("infotxt_15px")}>
-                      <img id={style.csubimg01} src="img/icn_folderClose.png" />
+                      <img
+                        alt=""
+                        id={style.csubimg01}
+                        src="img/icn_folderClose.png"
+                      />
                       업종종합점수
                     </span>
                   </li>
@@ -123,7 +140,7 @@ export const CreatePort = () => {
                     </span>
                   </li>
                   <li id={style.cmain1} className={cx("depth1")}>
-                    <img src="../img/icn_folderOpen.png" />
+                    <img alt="" src="../img/icn_folderOpen.png" />
                     <span className={cx("subtitle_15px")}>모멘텀</span>
                   </li>
                   <li
@@ -133,6 +150,7 @@ export const CreatePort = () => {
                   >
                     <span className={cx("infotxt_15px")}>
                       <img
+                        alt=""
                         id={style.csubimg10}
                         src="../img/icn_folderClose.png"
                       />
@@ -240,6 +258,7 @@ export const CreatePort = () => {
                   >
                     <span className={cx("infotxt_15px")}>
                       <img
+                        alt=""
                         id={style.csubimg11}
                         src="../img/icn_folderClose.png"
                       />
@@ -476,6 +495,7 @@ export const CreatePort = () => {
                   >
                     <span className={cx("infotxt_15px")}>
                       <img
+                        alt=""
                         id={style.csubimg12}
                         src="../img/icn_folderClose.png"
                       />
@@ -625,16 +645,14 @@ export const CreatePort = () => {
         <div className={cx("area_location")} id={style.locNewPort}>
           <ul>
             <li className={cx("fl")}>
-              <p className={cx("fl", "title")} style={{ margin: "0px" }}>
-                월봉 백테스팅 포트 만들기
-              </p>
-              <p className={cx("fl", "info")} style={{ margin: "0px" }}>
+              <p className={cx("fl", "title")}>월봉 백테스팅 포트 만들기</p>
+              <p className={cx("fl", "info")}>
                 퀀티지가 제공하는 다양한 조건으로 나만의 투자전략을 만들어
                 보세요.
               </p>
             </li>
             <li className={cx("fr")}>
-              <p className={cx("crumbs")} style={{ margin: "0px" }}>
+              <p className={cx("crumbs")}>
                 백테스트
                 <span></span>
                 월봉 백테스팅 포트 만들기
@@ -652,11 +670,11 @@ export const CreatePort = () => {
                 style={{ width: "50%" }}
                 className={cx("on")}
               >
-                <p style={{ margin: "0px" }}>Step.1 기본 설정</p>
+                <p>Step.1 기본 설정</p>
                 <span>기본 조건들을 설정하세요.</span>
               </li>
-              <li id={style.tabMenu1} style={{ width: "50%" }}>
-                <p style={{ margin: "0px" }}>Step 2. 포트 완성!</p>
+              <li id={style.tabMenu1} style={{ width: "50%" }} class>
+                <p>Step 2. 포트 완성!</p>
                 <span>백테스팅 포트가 완성되었습니다.</span>
               </li>
             </ul>
@@ -667,9 +685,7 @@ export const CreatePort = () => {
               {/* 포트 제목, 포트 설명 */}
               <div className={cx("port_subBox", "mt-0")}>
                 <div className={cx("fl", "box-port-title")}>
-                  <p className={cx("subtitle_16px")} style={{ margin: "0px" }}>
-                    포트 제목
-                  </p>
+                  <p className={cx("subtitle_16px")}>포트 제목</p>
                   <div>
                     <input
                       type="text"
@@ -689,6 +705,7 @@ export const CreatePort = () => {
                       }}
                     >
                       <img
+                        alt=""
                         id={style.btnName}
                         src="../img/icn_delForm.png"
                         className={cx("button-box")}
@@ -698,7 +715,7 @@ export const CreatePort = () => {
                   </div>
                 </div>
                 <div className={cx("fr", "box-port-description")}>
-                  <p className={cx("subtitle_16px")} style={{ margin: "0px" }}>
+                  <p className={cx("subtitle_16px")}>
                     포트 설명
                     <span
                       className={cx("infotxt_12px666")}
@@ -727,6 +744,7 @@ export const CreatePort = () => {
                       }}
                     >
                       <img
+                        alt=""
                         id={style.btnDescription}
                         src="img/icn_delForm.png"
                         style={{
@@ -739,7 +757,7 @@ export const CreatePort = () => {
                   </div>
                 </div>
                 <div className={cx("box-port-sample")}>
-                  <p className={cx("subtitle_16px")} style={{ margin: "0px" }}>
+                  <p className={cx("subtitle_16px")}>
                     샘플포트 만들기
                     <span
                       className={cx("infotxt_12px666")}
@@ -754,7 +772,7 @@ export const CreatePort = () => {
                     href="https://genport.newsystock.com/resource/kor_monthly_sample_20220707_v1_8.pdf"
                   >
                     따라만 하면 완성! 샘플포트 만들기
-                    <img src={arrImg} />
+                    <img alt="" src={arrImg} />
                   </a>
                 </div>
               </div>
@@ -812,7 +830,7 @@ export const CreatePort = () => {
                     <tbody>
                       <tr>
                         <td className={cx("new-port-step1", "taC")}>
-                          <div>
+                          <div className={cx("port-hight")}>
                             <input
                               type="text"
                               id={style.StartDate}
@@ -1045,7 +1063,7 @@ export const CreatePort = () => {
                     </button>
                   </li>
                   <li id={style.section_univ} className={cx("box_universe")}>
-                    <p style={{ margin: "0px" }}>
+                    <p>
                       <input
                         type="checkbox"
                         id={style["cbUnivKOSPIML-ALL"]}
@@ -1059,7 +1077,7 @@ export const CreatePort = () => {
                         코스피 중대형
                       </label>
                     </p>
-                    <p style={{ margin: "0px" }}>
+                    <p>
                       <input
                         type="checkbox"
                         id={style["cbUnivKOSPIMS-ALL"]}
@@ -1073,7 +1091,7 @@ export const CreatePort = () => {
                         코스피 중소형
                       </label>
                     </p>
-                    <p style={{ margin: "0px" }}>
+                    <p>
                       <input
                         type="checkbox"
                         id={style.cbUnivKOSDAQL}
@@ -1087,7 +1105,7 @@ export const CreatePort = () => {
                         코스닥 대형
                       </label>
                     </p>
-                    <p style={{ margin: "0px" }}>
+                    <p>
                       <input
                         type="checkbox"
                         id={style.cbUnivKOSDAQM}
@@ -1101,7 +1119,7 @@ export const CreatePort = () => {
                         코스닥 중형
                       </label>
                     </p>
-                    <p style={{ margin: "0px" }}>
+                    <p>
                       <input
                         type="checkbox"
                         id={style.cbUnivKOSDAQS}
@@ -1115,7 +1133,7 @@ export const CreatePort = () => {
                         코스닥 소형
                       </label>
                     </p>
-                    <p style={{ margin: "0px" }}>
+                    <p>
                       <input
                         type="checkbox"
                         id={style.cbUnivKOSDAQXS}
@@ -1129,7 +1147,7 @@ export const CreatePort = () => {
                         코스닥 초소형
                       </label>
                     </p>
-                    <p style={{ margin: "0px" }}>
+                    <p>
                       <input
                         type="checkbox"
                         id={style.cbUnivETF}
@@ -1173,7 +1191,7 @@ export const CreatePort = () => {
                       className={cx("fl", "addCondition")}
                       onclick="popupCondition()"
                     >
-                      <p style={{ margin: "0px" }}>
+                      <p>
                         <span className={cx("button_addCondition")}>+</span>
                         <span
                           className={cx("infotxt_13px333", "bold", "ml8px")}
@@ -1209,24 +1227,23 @@ export const CreatePort = () => {
                           id={style.btnBuyUndo}
                           className={cx("button_refresh")}
                         >
-                          <img src={undoImg} />
+                          <img alt="" src={undoImg} />
                         </button>
                         <button
                           type="button"
                           id={style.btnBuyRedo}
                           className={cx("button_refresh")}
                         >
-                          <img src={redoImg} />
+                          <img alt="" src={redoImg} />
                         </button>
                       </div>
                       <p
                         className={cx("subtitle_14px")}
                         id={style.BuyCondExpTxt}
-                        style={{ margin: "0px" }}
                       ></p>
                     </div>
                     <div className={cx("box-conditionInput-r")}>
-                      <div className={cx("mb-5")} style={{ margin: "0px" }}>
+                      <div className={cx("mb-5")}>
                         <button
                           type="button"
                           className={cx("ml4px", "btn_medium", "btn_white")}

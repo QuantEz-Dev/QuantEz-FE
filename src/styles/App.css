@@ -35,6 +35,10 @@ white-logo.png
   display: block;
 }
 
+ul {
+  padding: 0;
+}
+
 .content {
   margin-top: 50px;
   background-color: white;
