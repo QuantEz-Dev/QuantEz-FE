@@ -3,7 +3,16 @@ import React from "react";
 
 
 export const AssetManage = () => {
-  return {
+  return (
+    <div className="assetManageWrap">
+      <div className="assetManageTitle">
+        <span>
+          자산 입력하기
+        </span>
+      </div>
+      <div className="assetManageContent">
+      </div>
+    </div>
     
-  }
+  )
 }
