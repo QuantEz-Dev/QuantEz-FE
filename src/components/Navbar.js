@@ -20,7 +20,7 @@ export const Navbar = () => {
               <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
             </li>
             <li>
-              <Link class="login" to="/AskQuestion">
+              <Link class="login" to="/QA">
                 질문게시판
               </Link>
               <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>

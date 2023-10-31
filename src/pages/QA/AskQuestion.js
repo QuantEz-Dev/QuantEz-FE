@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from "react";
 import ReactQuill from "react-quill";
 import 'react-quill/dist/quill.snow.css';
-import "../../styles/QA.css";
+import "../../styles/QA.scss";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
@@ -38,8 +38,8 @@ export const AskQuestion = () => {
             </div>
             <ReactQuill></ReactQuill>
           </div>
-          <button  type="submit" className="submit-btn">등록하기
-          <Link to={}></Link></button>
+          <button  type="submit" className="submit-btn">등록하기</button>
+          {/* <Link to={}></Link></button> */}
         </form>
       </div>
     </div>

@@ -15,7 +15,7 @@ import { FinanceSheet2 } from "./pages/FinanceSheet/FinanceSheet-trade2";
 import { FinanceSheet3 } from "./pages/FinanceSheet/FinanceSheet-trade3";
 import { FinanceSheet4 } from "./pages/FinanceSheet/FinanceSheet-trade4";
 import { AskQuestion } from "./pages/QA/AskQuestion";
-import { PostList } from "./pages/QA/PostList";
+import { QuestionList } from "./pages/QA/QuestionList";
 import { AssetManage } from "./pages/AssetManage";
 import { Navbar } from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -80,11 +80,12 @@ function App() {
             element={<FinanceSheet4 />}
           />
 
+          <Route path="/QA" element={<QuestionList/>} />
           <Route
-            path="/AskQuestion"
+            path="/QA/AskQuestion"
             element={<AskQuestion/>}
           />
-          <Route path="/PostList" element={<PostList/>} />
+          
         </Routes>
         <Footer />
       </Router>
