@@ -1,30 +1,57 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles/QA.scss";
+import axios from "axios";
 
-// 가상 데이터
-const questions = [
-  {
-    id : 1,
-    question: "이름이 뭔가요?",
-  },
-  {
-    id :2,
-    question: "여기 화장실이 어디에요?",
-  },
-];
+import CommonTable from "../../components/Table/Table";
+import CommonTableColumn from "../../components/Table/CommonTableColumn";
+import CommonTableRow from "../../components/Table/CommonTableRow";
+import { Link } from "react-router-dom";
 
-export const QuestionList = () => {
+function QuestionListBoard() {
+  const [questions, setQuestions] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://127.0.0.1:8000/board/')
+    .then((response) => {
+      setQuestions(response.data);
+    })
+    .catch((error) => {
+      console.error('Error fetching data: ', error);
+    });
+  }, []);
+
+  const questionRows = Array.isArray(questions) ? (
+    questions.map((question) => (
+      <CommonTableRow key={question.id}>
+        <CommonTableColumn>{question.id}</CommonTableColumn>
+        <CommonTableColumn>{question.subject}</CommonTableColumn>
+        <CommonTableColumn>{question.create_date}</CommonTableColumn>
+        <CommonTableColumn>{question.author.username}</CommonTableColumn>
+      </CommonTableRow>
+    ))
+  ) : null;
+
   return (
     <div className="qa-container">
       <div className="qa-wrap">
         <div className="qa-title">
           <span>질문과 답변</span>
         </div>
-        <div className="qalist-wrap">
-          
-        </div>
+        <form>
+          <div className="qalist-wrap">
+            <CommonTable headersName={['글번호', '제목', '등록일', '작성자']}>
+              {questionRows}
+            </CommonTable>
+          </div>
+        </form>
+        <button className="link-to-askquestion submit-btn" style={{marginBottom: '3rem'}}>
+          <Link to={"/QA/AskQuestion"}>
+            <span>작성하기</span>
+          </Link>
+        </button>
       </div>
-
     </div>
   )
 }
+
+export default QuestionListBoard;

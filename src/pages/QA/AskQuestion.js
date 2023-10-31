@@ -9,16 +9,28 @@ export const AskQuestion = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  // const handleTitleChange = (e) => {
-  //   setTitle(e.target.value);
-  // };
-  // const handleContentChange = (e) => {
-  //   setContent(value);
-  // };
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const handleTitleChange = (e) => {
+    setTitle(e.target.value);
+  };
 
-  // }
+  const handleContentChange = (value) => {
+    setContent(value);
+  };
+
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('http://127.0.0.1:8000/board/question/create', {
+        subject: title,
+        content: content
+      });
+
+      console.log(response.data);
+    } catch (error) {
+      console.error('Error submitting data:', error);
+    }
+  };
 
   return (
     <div className="qa-container">
@@ -26,20 +38,23 @@ export const AskQuestion = () => {
         <div className="qa-title">
           <span>질문 등록하기</span>
         </div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="qa-user-input">
             <div className="qa-user-title">
               <dl>
                 <dt>제목</dt>
                 <dd>
-                  <input className="user-title-input" type="text" placeholder="제목 입력"></input>
+                  <input className="user-title-input" type="text" placeholder="제목 입력" value={title} onChange={handleTitleChange}></input>
                 </dd>
               </dl>
             </div>
-            <ReactQuill></ReactQuill>
+            <ReactQuill style={{height: '40rem'}} value={content} onChange={handleContentChange}></ReactQuill>
           </div>
-          <button  type="submit" className="submit-btn">등록하기</button>
-          {/* <Link to={}></Link></button> */}
+          <button  type="submit" className="submit-btn">
+            <Link to={"/QA"}>
+              등록하기
+            </Link>
+          </button>
         </form>
       </div>
     </div>
