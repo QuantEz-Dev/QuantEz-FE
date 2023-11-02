@@ -10,6 +10,8 @@ export const Login = () => {
   const [password2, setPassword2] = useState('');
   const [email, setUserEmail] = useState('');
 
+  const [authToken, setAuthToken] = useState(null);
+
   const onChangeName = (e) => {
     setUserName(e.target.value);
   };
@@ -22,10 +24,11 @@ export const Login = () => {
   const onChangeEmail = (e) => {
     setUserEmail(e.target.value);
   };
+
   const onSubmit = (e) => {
     e.preventDefault();
 
-    const user = {
+    const data = {
       email: email,
       password1: password1,
       password2: password2,
@@ -37,11 +40,12 @@ export const Login = () => {
       return false;
     }
 
-    Axios.post('http://localhost:8000/common/signup/', user)
+    Axios.post('http://127.0.0.1:8000/common/signup/', data)
       .then(res => {
         if(res.data.key) {
           localStorage.clear();
-          localStorage.setItem('token', res.data.key);
+          setAuthToken(res.data.key);
+          // localStorage.setItem('token', res.data.key);
           window.location.replace('/');
         } else {
           setUserName('');
@@ -56,12 +60,12 @@ export const Login = () => {
         alert('아이디 혹은 비밀번호가 일치하지 않습니다');
       })
 
-    Axios.post('http://localhost:8000/common/login', user)
+    Axios.post('http://127.0.0.1:8000/common/login', data)
       .then(res => {
         if(res.data.key) {
           localStorage.clear();
-          localStorage.setItem('token'. res.data.key)
-          window.location.replace('https://localhost:3000')
+          localStorage.setItem('token'.res.data.key)
+          window.location.replace('https://127.0.0.1:3000')
         } else {
           setUserName('');
           setPassword1('');
