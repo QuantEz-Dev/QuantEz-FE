@@ -46,7 +46,7 @@ export const Login = () => {
           localStorage.clear();
           setAuthToken(res.data.key);
           // localStorage.setItem('token', res.data.key);
-          window.location.replace('/');
+          window.location.replace('https://127.0.0.1:3000/');
         } else {
           setUserName('');
           setPassword1('');

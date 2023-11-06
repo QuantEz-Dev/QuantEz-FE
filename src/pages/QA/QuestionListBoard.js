@@ -39,8 +39,9 @@ function QuestionListBoard() {
         </div>
         <form>
           <div className="qalist-wrap">
+            {/* TODO : 데이터 map 으로 받아오기 */}
             <CommonTable headersName={['글번호', '제목', '등록일', '작성자']}>
-              {questionRows}
+              {questions}
             </CommonTable>
           </div>
         </form>
