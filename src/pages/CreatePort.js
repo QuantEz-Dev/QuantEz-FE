@@ -20,7 +20,7 @@ export const CreatePort = () => {
             className={cx("btn_cls", "pop-close")}
             onclick="popupCondition()"
           >
-            <img src="../img/btn_clsPopup_gray.png" />
+            <img alt="" src="../img/btn_clsPopup_gray.png" />
           </div>
 
           <div className={cx("pop-content")}>
@@ -61,7 +61,7 @@ export const CreatePort = () => {
               >
                 <ul id={style.ConditionTree}>
                   <li id={style.cmain0} className={cx("depth1")}>
-                    <img src="../img/icn_folderOpen.png" />
+                    <img alt="" src="../img/icn_folderOpen.png" />
                     <span className={cx("subtitle_15px")}>종합</span>
                   </li>
                   <li
@@ -70,7 +70,11 @@ export const CreatePort = () => {
                     onclick="Component.MPortUI.openPopConditionTree(0, 0, 2);"
                   >
                     <span className={cx("infotxt_15px")}>
-                      <img id={style.csubimg00} src="img/icn_folderClose.png" />
+                      <img
+                        alt=""
+                        id={style.csubimg00}
+                        src="img/icn_folderClose.png"
+                      />
                       종합점수
                     </span>
                   </li>
@@ -98,7 +102,11 @@ export const CreatePort = () => {
                     onclick="Component.MPortUI.openPopConditionTree(0, 1, 3);"
                   >
                     <span className={cx("infotxt_15px")}>
-                      <img id={style.csubimg01} src="img/icn_folderClose.png" />
+                      <img
+                        alt=""
+                        id={style.csubimg01}
+                        src="img/icn_folderClose.png"
+                      />
                       업종종합점수
                     </span>
                   </li>
@@ -132,7 +140,7 @@ export const CreatePort = () => {
                     </span>
                   </li>
                   <li id={style.cmain1} className={cx("depth1")}>
-                    <img src="../img/icn_folderOpen.png" />
+                    <img alt="" src="../img/icn_folderOpen.png" />
                     <span className={cx("subtitle_15px")}>모멘텀</span>
                   </li>
                   <li
@@ -142,6 +150,7 @@ export const CreatePort = () => {
                   >
                     <span className={cx("infotxt_15px")}>
                       <img
+                        alt=""
                         id={style.csubimg10}
                         src="../img/icn_folderClose.png"
                       />
@@ -249,6 +258,7 @@ export const CreatePort = () => {
                   >
                     <span className={cx("infotxt_15px")}>
                       <img
+                        alt=""
                         id={style.csubimg11}
                         src="../img/icn_folderClose.png"
                       />
@@ -485,6 +495,7 @@ export const CreatePort = () => {
                   >
                     <span className={cx("infotxt_15px")}>
                       <img
+                        alt=""
                         id={style.csubimg12}
                         src="../img/icn_folderClose.png"
                       />
@@ -694,6 +705,7 @@ export const CreatePort = () => {
                       }}
                     >
                       <img
+                        alt=""
                         id={style.btnName}
                         src="../img/icn_delForm.png"
                         className={cx("button-box")}
@@ -732,6 +744,7 @@ export const CreatePort = () => {
                       }}
                     >
                       <img
+                        alt=""
                         id={style.btnDescription}
                         src="img/icn_delForm.png"
                         style={{
@@ -759,7 +772,7 @@ export const CreatePort = () => {
                     href="https://genport.newsystock.com/resource/kor_monthly_sample_20220707_v1_8.pdf"
                   >
                     따라만 하면 완성! 샘플포트 만들기
-                    <img src={arrImg} />
+                    <img alt="" src={arrImg} />
                   </a>
                 </div>
               </div>
@@ -1028,129 +1041,7 @@ export const CreatePort = () => {
                 </div>
                 {/* 매도조건 */}
               </div>
-              {/* 매매조건 */}
-              {/* 유니버스 */}
-              <div className={cx("port_subBox")}>
-                <ul>
-                  <li>
-                    <span className={cx("subtitle_16px", "mr20px")}>
-                      유니버스 선택
-                    </span>
-                    <button
-                      type="button"
-                      className={cx("btn_small", "btn_white")}
-                    >
-                      전체선택
-                    </button>
-                    <button
-                      type="button"
-                      className={cx("btn_small", "btn_white")}
-                    >
-                      선택해제
-                    </button>
-                  </li>
-                  <li id={style.section_univ} className={cx("box_universe")}>
-                    <p>
-                      <input
-                        type="checkbox"
-                        id={style["cbUnivKOSPIML-ALL"]}
-                        className={cx("check_np", "cbuniv")}
-                        checked="checked"
-                      />
-                      <label
-                        for="cbUnivKOSPIML-ALL"
-                        className={cx("checkbox_label_np")}
-                      >
-                        코스피 중대형
-                      </label>
-                    </p>
-                    <p>
-                      <input
-                        type="checkbox"
-                        id={style["cbUnivKOSPIMS-ALL"]}
-                        className={cx("check_np", "cbuniv")}
-                        checked="checked"
-                      />
-                      <label
-                        for="cbUnivKOSPIMS-ALL"
-                        className={cx("checkbox_label_np")}
-                      >
-                        코스피 중소형
-                      </label>
-                    </p>
-                    <p>
-                      <input
-                        type="checkbox"
-                        id={style.cbUnivKOSDAQL}
-                        className={cx("check_np", "cbuniv")}
-                        checked="checked"
-                      />
-                      <label
-                        for="cbUnivKOSDAQL"
-                        className={cx("checkbox_label_np")}
-                      >
-                        코스닥 대형
-                      </label>
-                    </p>
-                    <p>
-                      <input
-                        type="checkbox"
-                        id={style.cbUnivKOSDAQM}
-                        className={cx("check_np", "cbuniv")}
-                        checked="checked"
-                      />
-                      <label
-                        for="cbUnivKOSDAQM"
-                        className={cx("checkbox_label_np")}
-                      >
-                        코스닥 중형
-                      </label>
-                    </p>
-                    <p>
-                      <input
-                        type="checkbox"
-                        id={style.cbUnivKOSDAQS}
-                        className={cx("check_np", "cbuniv")}
-                        checked="checked"
-                      />
-                      <label
-                        for="cbUnivKOSDAQS"
-                        className={cx("checkbox_label_np")}
-                      >
-                        코스닥 소형
-                      </label>
-                    </p>
-                    <p>
-                      <input
-                        type="checkbox"
-                        id={style.cbUnivKOSDAQXS}
-                        className={cx("check_np", "cbuniv")}
-                        checked="checked"
-                      />
-                      <label
-                        for="cbUnivKOSDAQXS"
-                        className={cx("checkbox_label_np")}
-                      >
-                        코스닥 초소형
-                      </label>
-                    </p>
-                    <p>
-                      <input
-                        type="checkbox"
-                        id={style.cbUnivETF}
-                        className={cx("check_np", "cbuniv")}
-                      />
-                      <label
-                        for="cbUnivETF"
-                        className={cx("checkbox_label_np")}
-                      >
-                        ETF
-                      </label>
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              {/* 유니버스 */}
+              {/* 매매조건 */}             
               {/* 매수조건식 */}
               <div className={cx("port_subBox")}>
                 <div className={cx("subtitle_15px", "mb-10")}>
@@ -1214,14 +1105,14 @@ export const CreatePort = () => {
                           id={style.btnBuyUndo}
                           className={cx("button_refresh")}
                         >
-                          <img src={undoImg} />
+                          <img alt="" src={undoImg} />
                         </button>
                         <button
                           type="button"
                           id={style.btnBuyRedo}
                           className={cx("button_refresh")}
                         >
-                          <img src={redoImg} />
+                          <img alt="" src={redoImg} />
                         </button>
                       </div>
                       <p
@@ -1255,69 +1146,6 @@ export const CreatePort = () => {
                   <colgroup>
                     <col style={{ width: "160px" }}></col>
                   </colgroup>
-                  <tbody>
-                    <tr>
-                      <th className={cx("buy")}>매수종목 우선순위</th>
-                      <td>
-                        <input
-                          type="text"
-                          id={style.BaseOrderColumn}
-                          className={cx("text_medium")}
-                          placeholder="조건을 선택해 주세요."
-                          style={{
-                            width: "300px",
-                            marginRight: "30px",
-                            cursor: "pointer",
-                          }}
-                          readonly="readonly"
-                        />
-                        <button
-                          type="button"
-                          className={cx("btn_white", "btn_medium")}
-                          style={{ lineHeight: "15px", width: "auto" }}
-                        >
-                          불러오기
-                        </button>
-                        <button
-                          type="button"
-                          className={cx("btn_purple", "btn_medium")}
-                          style={{ lineHeight: "15px", width: "auto" }}
-                        >
-                          저장하기
-                        </button>
-                        <input
-                          type="radio"
-                          id={style.BaseOrderDirDESC}
-                          name="radiog_dark"
-                          className={cx("css-radiobtn")}
-                          checked="checked"
-                        />
-                        <label
-                          for="BaseOrderDirDESC"
-                          className={cx(
-                            "css-label",
-                            "radGroup1",
-                            "radGroup2",
-                            "mr-10"
-                          )}
-                        >
-                          내림차순(높은 값부터)↓
-                        </label>
-                        <input
-                          type="radio"
-                          id={style.BaseOrderDirASC}
-                          name="radiog_dark"
-                          className={cx("css-radiobtn")}
-                        />
-                        <label
-                          for="BaseOrderDirASC"
-                          className={cx("css-label", "radGroup1", "radGroup2")}
-                        >
-                          오름차순(낮은 값부터)↑
-                        </label>
-                      </td>
-                    </tr>
-                  </tbody>
                 </table>
                 <table
                   className={cx("tbl_horizon")}
@@ -1326,79 +1154,6 @@ export const CreatePort = () => {
                   <colgroup>
                     <col style={{ width: "160px" }}></col>
                   </colgroup>
-                  <tbody>
-                    <tr>
-                      <th className={cx("buy")}>매수종목 2차 우선순위</th>
-                      <td>
-                        <input type="checkbox" id={style.BaseOrder2Use} />
-                        <label for="BaseOrder2Use">&nbsp;2차 정렬 사용</label>
-                        <input
-                          type="text"
-                          id={style.BaseOrderColumn2}
-                          className={cx("text_medium")}
-                          placeholder="조건을 선택해 주세요."
-                          style={{
-                            width: "300px",
-                            marginRight: "30px",
-                            cursor: "pointer",
-                          }}
-                          readonly="readonly"
-                        />
-                        <button
-                          type="button"
-                          className={cx("btn_white", "btn_medium")}
-                          style={{
-                            lineHeight: "15px",
-                            width: "auto",
-                            display: "none",
-                          }}
-                        >
-                          불러오기
-                        </button>
-                        <button
-                          type="button"
-                          className={cx("btn_purple", "btn_medium", "mr-30")}
-                          style={{
-                            lineHeight: "15px",
-                            width: "auto",
-                            display: "none",
-                          }}
-                        >
-                          저장하기
-                        </button>
-                        <input
-                          type="radio"
-                          id={style.BaseOrderDirDESC2}
-                          name="radiog_dark2"
-                          className={cx("css-radiobtn")}
-                          checked="checked"
-                        />
-                        <label
-                          for="BaseOrderDirDESC2"
-                          className={cx(
-                            "css-label",
-                            "radGroup1",
-                            "radGroup2",
-                            "mr-10"
-                          )}
-                        >
-                          내림차순(높은 값부터)↓
-                        </label>
-                        <input
-                          type="radio"
-                          id={style.BaseOrderDirASC2}
-                          name="radiog_dark2"
-                          className={cx("css-radiobtn")}
-                        />
-                        <label
-                          for="BaseOrderDirASC2"
-                          className={cx("css-label", "radGroup1", "radGroup2")}
-                        >
-                          오름차순(낮은 값부터)↑
-                        </label>
-                      </td>
-                    </tr>
-                  </tbody>
                 </table>
               </div>
             </div>
