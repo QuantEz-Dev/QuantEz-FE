@@ -28,14 +28,14 @@
   height: 6.5625rem;
   margin-top: 1.94rem;
   margin-left: 6.38rem;
+  margin-bottom: 9rem;
 }
 
 .userimgBox {
   width: 5rem;
   height: 5rem;
-  
   margin-top: 2rem;
-  margin-left: 0.38rem;
+  margin-left: 2.7rem;
   border-radius: 70%;
   overflow: hidden;
 }
@@ -47,8 +47,8 @@
 }
 
 .username {
-  margin-left: 2.75rem;
-  margin-top: 3.5rem;
+  margin-left: 7.75rem;
+  margin-top: -3.5rem;
   width: 22.875rem;
 }
 
@@ -68,7 +68,7 @@
 
 .userContentBox {
   width: 70%;
-  margin: 3rem 10rem;
+  margin: 8rem 10rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   /* padding-left: 9rem; */

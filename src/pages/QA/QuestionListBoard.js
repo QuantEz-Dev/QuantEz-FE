@@ -11,9 +11,14 @@ function QuestionListBoard() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/board/')
+    axios.get('http://127.0.0.1:8000/board/', {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
     .then((response) => {
       setQuestions(response.data);
+      console.log(response.data);
     })
     .catch((error) => {
       console.error('Error fetching data: ', error);
@@ -31,6 +36,7 @@ function QuestionListBoard() {
     ))
   ) : null;
 
+
   return (
     <div className="qa-container">
       <div className="qa-wrap">
@@ -41,7 +47,7 @@ function QuestionListBoard() {
           <div className="qalist-wrap">
             {/* TODO : 데이터 map 으로 받아오기 */}
             <CommonTable headersName={['글번호', '제목', '등록일', '작성자']}>
-              {questions}
+              {questionRows}
             </CommonTable>
           </div>
         </form>
@@ -52,6 +58,7 @@ function QuestionListBoard() {
         </button>
       </div>
     </div>
+    
   )
 }
 
