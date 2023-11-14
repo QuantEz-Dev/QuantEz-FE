@@ -101,7 +101,16 @@ export const Login = () => {
               required=""
             />
             <S.Input
-              name="useS.Input              type="text"
+              name="password2"
+              placeholder="Password Confirm"
+              type="password"
+              value={password2}
+              required
+              onChange={e => setPassword2(e.target.value)}
+            />
+            <S.Input
+              name="username"
+              type="text"
               placeholder="Name"
               value={name}
               onChange={onChangeName}
@@ -131,9 +140,6 @@ export const Login = () => {
               onChange={e => setPassword1(e.target.value)}
             />
             {/* <S.Anchor href="#">Forgot your password?</S.Anchor> */}
-            <S.Button type="submit">Sign In</S.Button>
-            <S.Input name="email" type="email" placeholder="Email" />
-            <S.Input name="password" type="password" placeholder="Password" />
             <S.Anchor href="#">Forgot your password?</S.Anchor>
             <S.SignInButton type="submit">Sign In</S.SignInButton>
           </S.Form>

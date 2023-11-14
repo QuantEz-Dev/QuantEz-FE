@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import userPic from "../img/portrait_placeholder.png";
+import userPic from "../assets/img/portrait_placeholder.png";
 import React from "react";
 import { Chart as ChartJS, ArcElement, Tooltip } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
@@ -69,22 +69,22 @@ export const MyPage = () => {
                 <tr className="bond">
                   <td>채권</td>
                   <td></td>
-                  <td></td>
+                  <td>30</td>
                 </tr>
                 <tr className="fund">
                   <td>펀드</td>
                   <td></td>
-                  <td></td>
+                  <td>20</td>
                 </tr>
                 <tr className="ETF">
                   <td>ETF</td>
                   <td></td>
-                  <td></td>
+                  <td>10</td>
                 </tr>
                 <tr className="Etc">
-                  <td>etc</td>
+                  <td>기타</td>
                   <td></td>
-                  <td></td>
+                  <td>40</td>
                 </tr>
               </tbody>
             </table>
