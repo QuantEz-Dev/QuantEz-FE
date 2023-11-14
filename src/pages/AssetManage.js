@@ -17,9 +17,15 @@ export const AssetManage = () => {
       </div>
       <form className="assetManageContent">
         <div className="assetManageContentBox">
-          <div className="assetManageContentTitle">
-            <span>제목</span>
-            <input type="text" placeholder="제목을 입력하세요"></input>
+          <div className="assetManageContentTitleBox">
+            <div className="assetManageContentTitle">
+              <span>제목</span>
+              <input type="text" placeholder="제목을 입력하세요"></input>
+            </div>
+            <div className="assetManageContentSubTitle">
+              <span>내용(선택)</span>
+              <input type="text" placeholder="내용을 입력하세요"></input>
+            </div>
           </div>
           <div className="assetManageInput">
             <div className="assetManageInputTop">

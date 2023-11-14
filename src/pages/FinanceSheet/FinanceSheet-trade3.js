@@ -1,9 +1,3 @@
-import { Contents } from "./Contents";
-import { Sheets } from "./Sheets";
-
-
 export const FinanceSheet3 = () => {
-  return (
-    <h1> FinanceSheet3 서브 페이지입니다.</h1>
-  );
+  return <h1> FinanceSheet3 서브 페이지입니다.</h1>;
 };

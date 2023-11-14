@@ -57,20 +57,41 @@
     border: 1px solid #ccc;
     border-radius: 1.6rem;
 
-    .assetManageContentTitle {
+    .assetManageContentTitleBox {
       display: flex;
-      flex-direction: column;
-      padding: 3rem 4rem;
-      width: 35%;
 
-      span {
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-bottom: 0.8rem;
+      .assetManageContentTitle {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 4rem;
+        width: 35%;
+  
+        span {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-bottom: 0.8rem;
+        }
+        
+        input {
+          padding-left: 0.4rem;
+        }
       }
       
-      input {
-        padding-left: 0.4rem;
+      .assetManageContentSubTitle {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 4rem;
+        width: 50%;
+
+        span {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin-bottom: 0.8rem;
+        }
+
+        input {
+          padding-left: 0.4rem;
+        }
       }
     }
   } 

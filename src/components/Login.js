@@ -98,27 +98,16 @@ export const Login = () => {
               name="password1"
               type="password"
               placeholder="Password"
-              value={password1}
-              onChange={onChangePw1}
-              required
+              required=""
             />
             <S.Input
-              name="password2"
-              type="password"
-              placeholder="Confirm Password"
-              value={password2}
-              onChange={onChangePw2}
-              required
-            />
-            <S.Input
-              name="username"
-              type="text"
+              name="useS.Input              type="text"
               placeholder="Name"
               value={name}
               onChange={onChangeName}
               required
             />
-            <S.Button type="submit">Sign Up</S.Button>
+            <S.SignUpButton type="submit">Sign Up</S.SignUpButton>
           </S.Form>
         </S.SignUpContainer>
 
@@ -143,6 +132,10 @@ export const Login = () => {
             />
             {/* <S.Anchor href="#">Forgot your password?</S.Anchor> */}
             <S.Button type="submit">Sign In</S.Button>
+            <S.Input name="email" type="email" placeholder="Email" />
+            <S.Input name="password" type="password" placeholder="Password" />
+            <S.Anchor href="#">Forgot your password?</S.Anchor>
+            <S.SignInButton type="submit">Sign In</S.SignInButton>
           </S.Form>
         </S.SignInContainer>
 

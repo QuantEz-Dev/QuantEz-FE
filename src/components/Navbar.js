@@ -1,16 +1,15 @@
+// import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as Mainlogo } from "../img/Mainlogo.svg";
-import "../styles/Navbar.css";
+import { ReactComponent as Mainlogo } from "../assets/img/Mainlogo.svg";
 export const Navbar = () => {
+  // const [value, setValue] = useState("");
   return (
     <div id="header">
       <div id="header-top">
         <div id="header-top-right">
           <ul>
             <li>
-              <Link class="login" to="/login">
-                로그인
-              </Link>
+              <Link to="/login">로그인</Link>
               <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
             </li>
             <li>
@@ -26,11 +25,19 @@ export const Navbar = () => {
               <span>&nbsp;&nbsp; | &nbsp;&nbsp;</span>
             </li>
             <li class="in-select">
-              <select>
-                <option>연관 사이트</option>
-                <option>삼성증권</option>
-                <option>NH증권</option>
-                <option>한국투자증권</option>
+              <select
+                onChange={(event) =>
+                  event.target.value
+                    ? window.open(event.target.value, "_blank")
+                    : ""
+                }
+              >
+                <option value="">연관 사이트</option>
+                <option value="https://www.samsungpop.com/">삼성증권</option>
+                <option value="https://www.nhqv.com/">NH증권</option>
+                <option value="https://securities.koreainvestment.com/main/Main.jsp">
+                  한국투자증권
+                </option>
               </select>
             </li>
           </ul>
@@ -41,7 +48,7 @@ export const Navbar = () => {
           <Mainlogo />
         </Link>
         <nav id="gnb">
-          <ul id="MasterMainMenu">
+          <ul>
             <li class="gnb-depth-1">
               <Link className="gnb-depth-1-btn" to="/assetManage">
                 {" "}
@@ -65,7 +72,7 @@ export const Navbar = () => {
                      </Link>
                   </li>
                   <li>
-                    <Link class="gnb-depth-2-btn" to="/port">
+                    <Link to="/port">
                       포트 만들기
                     </Link>
                   </li>
