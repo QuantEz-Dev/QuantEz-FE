@@ -331,6 +331,7 @@ a:hover {
 }
 /* footer */
 #footer {
+  bottom: 0;
   height: 200px;
   overflow: hidden;
   clear: both;

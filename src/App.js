@@ -14,6 +14,8 @@ import { FinanceSheet2 } from "./pages/FinanceSheet/FinanceSheet-trade2";
 import { FinanceSheet3 } from "./pages/FinanceSheet/FinanceSheet-trade3";
 import { FinanceSheet4 } from "./pages/FinanceSheet/FinanceSheet-trade4";
 import QuestionListBoard from "./pages/QA/QuestionListBoard";
+import { Question } from "./pages/QA/Question";
+import { DummyQuestion } from "./pages/QA/DummyQA";
 import { AskQuestion } from "./pages/QA/AskQuestion";
 import { AssetManage } from "./pages/AssetManage";
 import { Navbar } from "./components/Navbar";
@@ -84,7 +86,8 @@ function App() {
             path="/QA/AskQuestion"
             element={<AskQuestion/>}
           />
-          
+          <Route path="/QA/1/" element={< DummyQuestion />} />
+
         </Routes>
         <Footer />
       </Router>

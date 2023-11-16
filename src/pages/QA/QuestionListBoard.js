@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import "../../styles/QA.scss";
 import axios from "axios";
 
-import CommonTable from "../../components/Table/Table";
-import CommonTableColumn from "../../components/Table/CommonTableColumn";
-import CommonTableRow from "../../components/Table/CommonTableRow";
+// import CommonTable from "../../components/Table/Table";
+// import CommonTableColumn from "../../components/Table/CommonTableColumn";
+// import CommonTableRow from "../../components/Table/CommonTableRow";
 import { Link } from "react-router-dom";
+import { Question } from "./Question";
 
 function QuestionListBoard() {
   const [questions, setQuestions] = useState([]);
@@ -25,17 +26,6 @@ function QuestionListBoard() {
     });
   }, []);
 
-  const questionRows = Array.isArray(questions) ? (
-    questions.map((question) => (
-      <CommonTableRow key={question.id}>
-        <CommonTableColumn>{question.id}</CommonTableColumn>
-        <CommonTableColumn>{question.subject}</CommonTableColumn>
-        <CommonTableColumn>{question.create_date}</CommonTableColumn>
-        <CommonTableColumn>{question.author.username}</CommonTableColumn>
-      </CommonTableRow>
-    ))
-  ) : null;
-
 
   return (
     <div className="qa-container">
@@ -46,9 +36,22 @@ function QuestionListBoard() {
         <form>
           <div className="qalist-wrap">
             {/* TODO : 데이터 map 으로 받아오기 */}
-            <CommonTable headersName={['글번호', '제목', '등록일', '작성자']}>
-              {questionRows}
-            </CommonTable>
+            <div className="qalist-container">
+              <div className="qalist-header qalist-flex">
+                <div className="qalist-num">번호</div>
+                <div className="qalist-title">제목</div>
+                <div className="qalist-writer">글쓴이</div>
+                <div className="qalist-date">날짜</div>
+              </div>
+              <div className="qalist-content qalist-flex">
+                <div className="qalist-num">1</div>
+                <Link className="qalist-title" style={{marginLeft: '1rem'}} to="/QA/1">
+                  <div>질문합니다</div>
+                </Link>
+                <div className="qalist-writer">jpaper</div>
+                <div className="qalist-date">2023.11.16</div>
+              </div>
+            </div>
           </div>
         </form>
         <button className="link-to-askquestion submit-btn" style={{marginBottom: '3rem'}}>
