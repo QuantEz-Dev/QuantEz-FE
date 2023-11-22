@@ -189,6 +189,8 @@ option {
   position: relative;
   margin: 0 auto;
   background-color: #f8f9fb;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 .main-banner-1-img {
   height: 400px;
@@ -261,7 +263,9 @@ option {
 /* main banner 2 */
 #main-banner-2 {
   height: 400px;
-  padding-right: 60px;
+  padding-right: 80px;
+  padding-left: 5rem;
+  padding-right: 5rem;
   overflow: hidden;
   position: relative;
   text-align: right;
@@ -780,6 +784,7 @@ Navbar styles
 }
 #header-con {
   height: 120px;
+  padding-left: 6rem;
   background-color: #f8f9fb;
 }
 #gnb {

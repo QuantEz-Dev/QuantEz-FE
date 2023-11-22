@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Home = () => {
   return (
     <div id="container">
@@ -22,12 +24,12 @@ export const Home = () => {
               </span>
             </p>
             <div class="button-box">
-              <a href="#" target="_blank" class="main-button-1" tabindex="0">
+              <Link to={"/port"} target="_blank" class="main-button-1" tabindex="0">
                 백테스팅 바로가기
-              </a>
-              <a href="#" target="_blank" class="main-button-2" tabindex="0">
+              </Link>
+              <Link to={"https://www.youtube.com/watch?v=aor3Dkh7FSY"} target="_blank" class="main-button-2" tabindex="0">
                 사용자 가이드 보기
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -51,9 +53,9 @@ export const Home = () => {
               </span>
             </p>
             <div class="button-box">
-              <a href="#" target="_blank" class="main-button-3" tabindex="0">
+              <Link to={"/financeSheetlist"} target="_blank" class="main-button-3" tabindex="0">
                 재무제표 가이드 보기
-              </a>
+              </Link>
             </div>
           </div>
         </div>
